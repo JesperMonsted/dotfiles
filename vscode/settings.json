@@ -32,7 +32,7 @@
   "editor.mouseWheelZoom": true,
   "powershell.integratedConsole.showOnStartup": false,
   "workbench.editor.showTabs": false,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "editor.renderFinalNewline": true,
   "git.enableCommitSigning": true,
   "[markdown]": {

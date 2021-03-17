@@ -12,8 +12,8 @@
 	fix-working-tree = !git rm --cached -r . && git reset --hard
 	fixauthor = commit --amend --reset-author --no-edit
 	rerun-ci = !git commit -m \"Rerun CI\" --allow-empty && git push
-	work = config user.email \"jpe@specshell.com\"
-	home = config user.email \"josephp90@gmail.com\"
+	work = config user.email \"jom@specshell.com\"
+	home = config user.email \"jesper@homerun.dk\"
 [help]
 	autocorrect = 1
 [core]
@@ -22,12 +22,6 @@
 	editor = code --wait
 [init]
 	defaultBranch = main
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg
-[tag]
-	forceSignAnnotated = true
 [pull]
 	rebase = true
 [push]
@@ -49,25 +43,6 @@
 	clean = git-lfs clean -- %f
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[url "ssh://git@gitlab.com/"]
-	insteadOf = https://gitlab.com/
-[url "ssh://git@bitbucket.org/"]
-	insteadOf = https://bitbucket.org/
-[url "ssh://git@heroku.com/"]
-	insteadOf = https://git.heroku.com/
 [user]
-	name = Joseph Petersen
-	signingKey = 368806594A969FBF577217D905756914983DA9E9
-	email = josephp90@gmail.com
-[includeIf "gitdir:~/git/work/"]
-	path = .gitconfig.work
-[includeIf "gitdir:~/git/code/"]
-	path = .gitconfig.home
-[includeIf "gitdir/i:C:/git/work/"]
-	path = .gitconfig.work
-[includeIf "gitdir/i:C:/git/code/"]
-	path = .gitconfig.home
-[includeIf "gitdir:/home/codespaces"]
-	path = .gitconfig.codespaces
-[diff "sopsdiffer"]
-	textconv = sops -d
+	name = Jesper Monsted
+	email = jom@specshell.com

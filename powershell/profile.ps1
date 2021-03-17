@@ -153,9 +153,9 @@ Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 
 $developmentWorkspace =
 if ($IsLinux -or $IsMacOS) {
-  @("~/git/code", "~/git/work")
+  @("~/git/work")
 } else {
-  @("C:\git\code", "C:\git\work")
+  @("C:\git\work")
 }
 
 # Helper function to change directory to your development workspace
@@ -224,13 +224,11 @@ function open {
 }
 
 function dotfile {
-  openBrowser 'https://github.com/jetersen/dotfiles'
+  openBrowser 'https://github.com/JesperMonsted/dotfiles'
 }
 
 function rimraf {
-  param (
-    [string[]] $paths
-  )
+  $paths = [string[]] $args
   Remove-Item -Force -Recurse $paths
 }
 
