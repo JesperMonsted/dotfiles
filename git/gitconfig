@@ -12,8 +12,8 @@
 	fix-working-tree = !git rm --cached -r . && git reset --hard
 	fixauthor = commit --amend --reset-author --no-edit
 	rerun-ci = !git commit -m \"Rerun CI\" --allow-empty && git push
-	work = config user.email \"jpe@specshell.com\"
-	home = config user.email \"josephp90@gmail.com\"
+	work = config user.email \"jesper.monsted@cellpointmobile.com\"
+	home = config user.email \"jesper@homerun.dk\"
 [help]
 	autocorrect = 1
 [core]
@@ -56,9 +56,9 @@
 [url "ssh://git@heroku.com/"]
 	insteadOf = https://git.heroku.com/
 [user]
-	name = Joseph Petersen
+	name = Jesper Monsted
 	signingKey = 368806594A969FBF577217D905756914983DA9E9
-	email = josephp90@gmail.com
+	email = jesper@homerun.dk
 [includeIf "gitdir:~/git/work/"]
 	path = .gitconfig.work
 [includeIf "gitdir:~/git/code/"]
