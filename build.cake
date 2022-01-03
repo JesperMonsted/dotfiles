@@ -80,7 +80,7 @@ Task("zsh")
 Task("oh-my-posh")
   .Does(() =>
 {
-  dotfile("oh-my-posh/jetersen.omp.json", home);
+  dotfile("oh-my-posh/jespermonsted.omp.json", home);
 });
 
 RunTarget(target);
