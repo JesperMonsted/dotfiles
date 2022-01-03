@@ -83,7 +83,7 @@ bindkey "^[[1;5D" backward-word
 [[ ! -f "$DOTFILES/zsh/aliases" ]] || source "$DOTFILES/zsh/aliases"
 
 if [ -z "$WSL_DISTRO_NAME" ]; then
-  zsh-defer -c 'eval "$(oh-my-posh --init --shell zsh --config ~/.jetersen.omp.json)"'
+  zsh-defer -c 'eval "$(oh-my-posh --init --shell zsh --config ~/.jespermonsted.omp.json)"'
 else
-  zsh-defer -c 'eval "$(oh-my-posh-wsl --init --shell zsh --config ~/.jetersen.omp.json)"'
+  zsh-defer -c 'eval "$(oh-my-posh-wsl --init --shell zsh --config ~/.jespermonsted.omp.json)"'
 fi
