@@ -24,8 +24,8 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
-[gpg]
-	program = gpg
+#[gpg]
+#	program = gpg
 [tag]
 	forceSignAnnotated = true
 [pull]
@@ -57,7 +57,7 @@
 	insteadOf = https://git.heroku.com/
 [user]
 	name = Jesper Monsted
-	signingKey = 368806594A969FBF577217D905756914983DA9E9
+#	signingKey = 368806594A969FBF577217D905756914983DA9E9
 	email = jesper@homerun.dk
 [includeIf "gitdir:~/git/work/"]
 	path = .gitconfig.work
