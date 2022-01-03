@@ -23,11 +23,11 @@
 [init]
 	defaultBranch = main
 [commit]
-	gpgsign = true
+#	gpgsign = true
 #[gpg]
 #	program = gpg
 [tag]
-	forceSignAnnotated = true
+#	forceSignAnnotated = true
 [pull]
 	rebase = true
 [push]
